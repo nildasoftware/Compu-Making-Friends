@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char agree;
+
+	cout << "Try to guess if I'm your friend or not, type y for yes, n for no? (y/n): ";
+	cin >> agree;
+
+	if (agree == 'y' || agree == 'Y'){
+		cout << "I'm Nilda and You are very agreeable! You make friends very quickly.\n"
+			<< "Hello my new friend, has anybody ever told you that you are\n"
+			<< "easy to get along with? That is a good trait." << endl;
+
+	}
+	else if (agree == 'n' || agree == 'N'){
+		cout << "Sorry to hear that! You should loosen up, you are too uptight.\n"
+			<< "I would have been a great friend, you should try harder.\n"
+			<< "You just lost a good friend, next time try to be more open.\n"
+			<< "I would have been a great friend and now you will never know.\n"
+			<< "You cannot see me, but I am sticking my tongue out at you." << endl;
+	}
+	else
+	{
+		cout << "Excuse me, that's too wordy. Let's try Again. Try to find the Y or the N on this keyboard.\n"
+			<< "I can get wordy so I understand, however, let's stick to yes or no. We don't\n"
+			<< "know each other well enough for conversations yet,\n"
+			<< "reminder: press y for yes or n for no. I see you like to follow your own rules.\n"
+			<< "Please, can we stick to y for yes or n for no? Let's try shall we? Yes or no?" << endl;
+	}
+		return 0;
+		system("pause");
+}
