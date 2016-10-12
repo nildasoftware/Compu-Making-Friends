@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main( )
+{
+    int numberofTimes; string name;
+
+    cout << "Hi, my name is Compu, what is your name? ";
+    cin >> name;
+    cout << "Nice to meet you " << name << ", that is a pretty name." << endl;
+
+    cout << "Can you guess how many times we have met? ";
+    cin >> numberofTimes;
+
+    if (numberofTimes < 1)
+        cout <<  name << ", Hint: You realize my name is Compu? Lets try again,\n"
+             << "I am a computer, I'm everywhere-how many times at least today have we met?\n";
+    else
+        cout << numberofTimes << " times? Ha ha ha, no way we met at least 115 times today\n"
+             << "HELLO " << name << " I'm a computer, I keep in touch literally with your fingers!\n"
+             << "it's so nice to finally catch your attention! \n"
+             << "I know computers are normally cold and quiet,\n"
+             << "I'm different, I'm not just any other computer\n"
+             << " I'm Compu, I like you (smiling with a cute dimple I have). I will see you around soon.\n"
+             << "bye "<< name << endl;
+
+    return 0;
+}
